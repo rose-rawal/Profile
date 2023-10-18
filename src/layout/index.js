@@ -15,11 +15,11 @@ const Header = () => {
   return (
     <div className='bg-gray-500 flex justify-between h-20 items-center p-0'>
         <div className='Logo text-5xl ml-5 pb-3'>Kuro</div>
-        <div className=' h-full sm:w-3/4 text-center md:w-1/2 '>
-            <ul className='flex  justify-evenly items-center h-full'>
+        <div className=' h-full sm:w-3/4 md:w-1/2 '>
+            <ul className='flex  justify-evenly h-full'>
             {
               routes.map((n)=>{
-                return <li className='hover:bg-black h-full flex items-center px-5 hover:text-white transition ease-in-out delay-150 cursor-pointer' onClick={(e)=>handleChange({n},e)}>{n.name}</li>
+                return <li key={n.name} className='hover:bg-black h-full flex items-center text-center flex-grow  hover:text-white transition ease-in-out delay-150 cursor-pointer' onClick={(e)=>handleChange({n},e)}><div className='w-full'>{n.name}</div></li>
               })
             }
                 
