@@ -1,22 +1,12 @@
 import React from 'react'
 import {useContext} from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import routes from '../routes';
 import context from '../components/context/maincontext';
 const Header = () => {
-  const navigate=useNavigate();
-  const {page,setPage}=useContext(context)
-  const handleChange=(abc,e)=>{
-    e.preventDefault();
-    setPage(abc.name);
-    if(abc.name==="Home")
-    {
-    navigate('/')
-    }else{
-    navigate(`/${abc.name.toLowerCase()}`)
-    }
-    console.log(page)
-  }
+  
+  const {handlenav}=useContext(context)
+
   return (
     <div className='bg-gray-500 flex justify-between h-20 items-center p-0'>
         <div className='Logo text-5xl ml-5 pb-3'>Kuro</div>
@@ -24,7 +14,7 @@ const Header = () => {
             <ul className='flex  justify-evenly h-full'>
             {
               routes.map((n)=>{
-                return <li key={n.name} className='hover:bg-black h-full flex items-center text-center flex-grow  hover:text-white transition ease-in-out delay-150 cursor-pointer' onClick={(e)=>handleChange(n,e)}><div className='w-full'>{n.name}</div></li>
+                return <li key={n.name} className='hover:bg-black h-full flex items-center text-center flex-grow  hover:text-white transition ease-in-out delay-150 cursor-pointer' onClick={(e)=>handlenav(n,e)}><div className='w-full'>{n.name}</div></li>
               })
             }
                 

@@ -18,7 +18,7 @@ const routes=[
     },{
         path:"/skills",
         element:<Skills/>,
-        name:'Skill'
+        name:'Skills'
     }
 ]
 export default routes;

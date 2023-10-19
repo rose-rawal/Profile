@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import routes from '../routes'
+import context from '../components/context/maincontext'
 const Footer = () => {
-  const handleClick=()=>{
-
-  }
+  const {handlenav}=useContext(context)
   return (
     <div className='flex justify-evenly items-center bg-gray-800 text-white py-4 text-sm relative h-50 pt-10'>
     <div>
@@ -21,7 +20,7 @@ const Footer = () => {
       <ul className=''>
         {
           routes.map((n)=>{
-            return <li onClick={(e)=>handleClick()} className='hover:text-gray-400 cursor-pointer pb-1'>{n.name}</li>
+            return <li key={n.name} onClick={(e)=>handlenav(n,e)} className='hover:text-gray-400 cursor-pointer pb-1'>{n.name}</li>
           })
         }
       </ul>

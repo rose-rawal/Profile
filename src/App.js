@@ -8,18 +8,25 @@ import Context from './components/context/context';
 function App() {
   return (
     <div className="App min-h-screen flex flex-col">
-    <Context>
+    
     
      <Router>
+     <Context>
      <Header/>
+     <div className='w-11/12 mx-auto flex-1 bg-gray-100 px-10'>
       <Routes>
+      
       {routes.map((n)=>{
         return <Route element={n.element} path={n.path} key={n.path}></Route>
       })}
+      
       </Routes>
+      </div>
+      <Footer/>
+      </Context>
      </Router>
-     <Footer/>
-     </Context>
+     
+     
     </div>
   );
 }
