@@ -4,16 +4,18 @@ import routes from './routes';
 import Header from './layout';
 import Footer from './layout/footer';
 import Context from './components/context/context';
+import './App.css'
+// import backImage from './image/stone-wall.jpg'
 // import Home from './page/Home';
 function App() {
   return (
-    <div className="App min-h-screen flex flex-col">
+    <div className="App min-h-screen flex flex-col backimage" >
     
     
      <Router>
      <Context>
      <Header/>
-     <div className='w-11/12 mx-auto flex-1 bg-gray-100 px-10'>
+     <div className={`w-11/12 mx-auto flex-1 bg-gray-100 px-10 cursor-pointer `} >
       <Routes>
       
       {routes.map((n)=>{
