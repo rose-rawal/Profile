@@ -8,8 +8,8 @@ const Header = () => {
   const {handlenav}=useContext(context)
 
   return (
-    <div className='bg-gray-500 flex justify-between h-20 items-center p-0'>
-        <div className='Logo text-5xl ml-5 pb-3'>Kuro</div>
+    <div className='bg-gray-900 flex justify-between h-20 items-center p-0 text-white'>
+        <div className='Logo text-5xl ml-5 pb-3 '>Kuro</div>
         <div className=' h-full sm:w-3/4 md:w-1/2 '>
             <ul className='flex  justify-evenly h-full'>
             {
