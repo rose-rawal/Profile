@@ -15,21 +15,21 @@ const Carousel = () => {
       <img src={chatapp} class="d-block w-100 brightness-50" alt="tree"/>
       <div class="carousel-caption d-none d-md-block">
         <h5 className='font-black'>My Chatroom</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <p>ChatRoom created with MERN without using socket and firebase. Solely running via database connection.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src={cocktailapp} class="d-block w-100 brightness-50" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5 className='font-black'>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5 className='font-black'>Cocktail Search Page</h5>
+        <p>Created a search page to search for cocktail and learn their ingredients and recipe. Used a pre-built API.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src={landingpage} class="d-block w-100 brightness-50" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5 className='font-black'>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5 className='font-black'>E-Commerce Landing Page</h5>
+        <p>This is a site landing page created using basic HTML CSS and Bootstrap. This website illustrates only the front page of the site.</p>
       </div>
     </div>
   </div>
