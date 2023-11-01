@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Context=({children})=>{
     const navigate=useNavigate();
     const [page,setPage]=useState("Home")
+    const [bgAnimate,setBgAnimate]=useState(4);
     const handlenav=(abc,e)=>{
         e.preventDefault();
         setPage(abc.name);
@@ -16,8 +17,9 @@ const Context=({children})=>{
     }
     console.log(page)
     }
+
     return (
-        <context.Provider value={{page,setPage,handlenav}}>
+        <context.Provider value={{page,setPage,handlenav,bgAnimate,setBgAnimate}}>
             {children}
         </context.Provider>
     )

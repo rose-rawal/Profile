@@ -1,10 +1,12 @@
-import React, { useEffect,  useState } from 'react'
+import React, { useContext, useEffect,  useState } from 'react'
 import Carousel from './additional/Carousel';
+import Scrollto from './additional/Scrollto';
+import context from '../components/context/maincontext';
 
 // import image from '../../public/image/stone-wall.jpg'
 const Home = () => {
   const [animation,setAnimation]=useState(true);
-
+  const {bgAnimate}=useContext(context)
   const [repeat,setRepeat]=useState(true)
 
   useEffect(()=>{
@@ -29,6 +31,15 @@ through self-ventures. Learned web development with of multiple languages. Each 
 <h3 className={`pl-20 text-6xl font-bold `}>Multiple Different Projects</h3>
 <p className='py-10 ml-20'>Multiple different projects have showcased my abilities and talents in different areas of web development.</p>
 <Carousel/>
+
+</div>
+<div className={`bg-gray-200 pt-12 h-screen text-black ${bgAnimate===0?'bg-gray-300':bgAnimate===1?'bg-gray-400':bgAnimate===2?'bg-gray-500':bgAnimate===3?'bg-gray-600':'bg-gray-200'}`}>
+
+<h1 className='text-4xl ml-10 pl-20 pb-5'>I have</h1>
+{/* ${repeat?'opacity-100':'opacity-0'} */}
+<h3 className={`pl-20 text-6xl font-bold `}>Multiple Different Projects</h3>
+<p className='py-10 ml-20'>Multiple different projects have showcased my abilities and talents in different areas of web development.</p>
+<Scrollto/>
 
 </div>
 
