@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='flex justify-evenly items-center bg-gray-800 text-white py-4 text-sm relative h-50 pt-10'>
     <div>
     <span className='text-lg pb-2 text-gray-300 absolute top-2'>Info</span>
-      <ul className=''>
+      <ul className='pt-4'>
         <li className='hover:text-gray-400 cursor-pointer pb-1'>Kuro </li>
         <li className='hover:text-gray-400 cursor-pointer pb-1'>rooserwl@gmail.com</li>
         <li className='hover:text-gray-400 cursor-pointer pb-1'>Phone No</li>
