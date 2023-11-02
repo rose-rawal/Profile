@@ -1,12 +1,54 @@
 .backimage{
     background-image: url('./image/stone-wall.jpg') ;
     background-size: cover;
-    
+    background-attachment: fixed;
 }
 .backgroun{
     background-image: url('./image/tree.jpg');
     background-size: cover;
+    
 }
 .anim{
     transition: all 0.4s ease-in-out;
+}
+.backg{
+    background-image: url('./image/background-about-page.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    /* filter: brightness(40%); */
+}
+.underline-on-hover {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    /* Text color */
+    text-decoration: none;
+}
+
+.underline-on-hover::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    /* Adjust the height of the underline as needed */
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    /* Underline color */
+    transition: width 0.3s;
+    /* Adjust the transition duration as needed */
+}
+
+.underline-on-hover:hover::before {
+    width: 100%;
+    /* Width set to 100% on hover to create the underline effect */
+}
+
+.change{
+    color: aqua;
+}
+.ext-font{
+    font-family: 'Lobster', sans-serif;
 }

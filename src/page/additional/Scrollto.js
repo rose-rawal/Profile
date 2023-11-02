@@ -20,7 +20,7 @@ const Scrollto = () => {
     {
         lang.slice(0,4).map((n)=>{
             return(
-            <li onMouseEnter={()=>{handleEnter(n.cont)}} onMouseLeave={()=>{handleLeave(n.cont)}} className='hover:bg-gray-700 px-5 py-2 anim rounded-xl'>
+            <li onMouseEnter={()=>{handleEnter(n.cont)}} onMouseLeave={()=>{handleLeave(n.cont)}} key={n.name} className='hover:bg-gray-700 px-5 py-2 anim rounded-xl'>
             <a href={n.link} className='flex text-white ' >
             <div className='w-20 h-20 rounded-full  flex justify-center items-center ' ><img src={n.icon} alt="icon" className='w-3/4 h-3/4 ' /></div>
             <span className={`mt-2 ${bgAnimate===n.cont? animate?'visible':'invisible':'invisible'}`}><span className='font-bold'>{n.name}</span>

@@ -4,7 +4,7 @@ import cocktailapp from '../../image/cocktailapp.png'
 import landingpage from '../../image/landingpage.png'
 const Carousel = () => {
   return (
-    <div id="carouselExampleCaptions" className="carousel slide w-1/2 m-auto" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" className="carousel slide w-3/5 m-auto" data-bs-ride="carousel">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
