@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <div className='bg-gray-900 flex justify-between h-20 items-center p-0 text-white absolute z-40 w-full'>
-        <div className='Logo text-5xl ml-5 pb-3 '>Kuro</div>
+        <div className='Logo text-5xl pb-3 ext-font ml-20'>Kuro</div>
         <div className=' h-full sm:w-3/4 md:w-1/2 '>
             <ul className='flex  justify-evenly h-full'>
             {

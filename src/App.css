@@ -72,3 +72,49 @@
         transition: none;
     }
 }
+.text-animate{
+    color: black;
+    -webkit-text-stroke: 0.1vw black;
+    position: relative;
+ 
+}
+.text-animate::after{
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    color: rgb(31, 165, 81);
+    -webkit-text-stroke: 0vw rgb(8, 8, 8);
+    border-right: solid 3px rgb(31, 165, 81);
+    overflow: hidden;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width:100%
+    }
+}
+.shadow-effect{
+    /* background-image: url('/src/image/monitor.webp'); */
+    box-shadow: 0 0 10px rgba(243, 242, 242, 0.5);
+        /* Adjust the blur radius and shadow color as needed */
+        border-radius: 8px;
+        /* Adjust the border radius to match your design */
+        overflow: hidden;
+}
+.shadow-effect:hover{
+    box-shadow: 0 0 60px rgba(243, 242, 242, 0.5);
+}
+.scroll-animation{
+    scroll-snap-type: y mandatory ;
+    overflow-y: scroll;
+    height: 120vh;
+}
+.scroll-animation::-webkit-scrollbar{
+    width: 0;
+}

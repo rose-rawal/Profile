@@ -18,6 +18,22 @@ const Context=({children})=>{
     console.log(page)
     }
 
+//     const observer=new IntersectionObserver((entries)=>{
+//     entries.forEach((entry)=>{
+//       if (entry.isIntersecting)
+//       {
+//         entry.target.classList.add('show')
+//       }
+//       // else{
+//       //   entry.target.classList.remove('show')
+//       // }
+//     })
+//   })
+//   const heedn=document.querySelectorAll('.heedn')
+//   heedn.forEach((el)=>{
+//     observer.observe(el);
+//   })
+
     return (
         <context.Provider value={{page,setPage,handlenav,bgAnimate,setBgAnimate}}>
             {children}

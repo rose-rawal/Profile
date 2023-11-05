@@ -15,7 +15,7 @@ function App() {
      <Router>
      <Context>
      <Header/>
-     <div className={`w-11/12 mx-auto flex-1 bg-transparent cursor-pointer flex pb-28`} >
+     <div className={`w-full mx-auto flex-1 bg-transparent cursor-pointer flex pb-28`} >
       <Routes>
       
       {routes.map((n)=>{
