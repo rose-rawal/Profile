@@ -18,6 +18,23 @@ const Context=({children})=>{
     console.log(page)
     }
 
+
+    const entryAnimation={
+    initial:{
+      x:"150vw"
+    },
+    final:{
+      x:0,
+      transition:{
+        duration:0.5,
+        type:'spring'
+      }
+    },
+    exit:{
+      x:"-150vw"
+    }
+  }
+
 //     const observer=new IntersectionObserver((entries)=>{
 //     entries.forEach((entry)=>{
 //       if (entry.isIntersecting)
@@ -35,7 +52,7 @@ const Context=({children})=>{
 //   })
 
     return (
-        <context.Provider value={{page,setPage,handlenav,bgAnimate,setBgAnimate}}>
+        <context.Provider value={{page,setPage,handlenav,bgAnimate,setBgAnimate,entryAnimation}}>
             {children}
         </context.Provider>
     )

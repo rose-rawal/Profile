@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Rose from '../image/Rose.jpg'
-
+import context from '../components/context/maincontext'
+import { motion } from 'framer-motion'
 const About = () => {
+  const {entryAnimation}=useContext(context)
   return (
-    <div className='py-24 flex flex-col items-center w-full backg '>
+
+    <motion.div
+    variants={entryAnimation}
+    initial='initial'
+    animate='final'
+    exit='exit'
+    className='py-24 flex flex-col items-center w-full backg '>
       <h1 className='font-extrabold text-4xl font-serif underline-on-hover mb-10'>Rose Rawal</h1>
 
       <div className='w-52 h-52 rounded-full overflow-hidden'>
@@ -28,7 +36,7 @@ through self-ventures. Learned web development for skill gaining but started tru
 Now I am continuously exploring the field in search of new skills and honing my current skills to be better tomorrow than today.
 </p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
