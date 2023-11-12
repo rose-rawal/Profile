@@ -8,10 +8,10 @@ const Myprojects = () => {
   
   return (
     <div className=''>
-
-    
-      <ScrollingImages/>
-      <ScrollingImages/>
+    {listproject.map((n)=>{
+     return <ScrollingImages dat={n} leng={listproject.length}/>
+    })}
+      
         
     </div>
   )

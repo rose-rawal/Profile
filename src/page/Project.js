@@ -45,6 +45,11 @@ const Project = () => {
       boxShadow:'0px 0px 10px rgb(255,255,255)'
     }
   }
+  const handleClick=(e)=>{
+    e.preventDefault();
+    const scrollPortion=document.getElementById('scrollPortion')
+    scrollPortion.scrollIntoView({behavior:'smooth'})
+  }
   return (
     <motion.div
     variants={entryAnimation}
@@ -66,6 +71,7 @@ const Project = () => {
     initial='initial'
     animate='after'
     whileHover='hover'
+    onClick={handleClick}
     >GO</motion.button> 
     </motion.p>
     <motion.div 
@@ -77,7 +83,7 @@ const Project = () => {
     </div>
     <div 
     
-    className='min-h-screen w-3/4 '>
+    className='min-h-screen w-3/4 ' id='scrollPortion'>
     <div>
       <Myprojects/>
     </div>
