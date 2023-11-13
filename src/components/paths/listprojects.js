@@ -10,7 +10,9 @@ const listproject=[
         image:chat,
         image2:chat2,
         context:'A chatroom implemented with secure and well managed collection of accounts',
-        link:'https://peach-kuro.netlify.app/'
+        link:'https://peach-kuro.netlify.app/',
+        created:'Self',
+        Lang:'HTML, CSS, JS, MERN'
         
     },
      {
@@ -18,14 +20,18 @@ const listproject=[
         image:eureka,
         image2:eureka2,
         context:'An Ecommerce landing page that illustrates my skill in basic usage of HTML and CSS/ Bootstrap',
-        link:'https://eureka-kuro.netlify.app/'
+        link:'https://eureka-kuro.netlify.app/',
+        created:'Self',
+        Lang:'HTML, CSS'
     },
     {
         name:"Pear",
         image:pear,
         image2:pear2,
         context:'A site to search for the available cocktails and access their recipe and ingredients giving a glimpse of data to learn the required skill to learn to prepare cocktail',
-        link:'https://peaches-kuro.netlify.app/'
+        link:'https://peaches-kuro.netlify.app/',
+        created:'Self',
+        Lang:'HTML, CSS, JS, React'
     }
 ]
 listproject.forEach((n,i)=>{

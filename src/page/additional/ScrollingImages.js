@@ -3,7 +3,7 @@ import { motion,useScroll,useTransform } from 'framer-motion'
 
   const ScrollingImages = ({dat,leng}) => {
      const targetRef=useRef(null)
-     const {index,name,image,image2,context,link}=dat
+     const {index,name,image,image2,context,link,created,Lang}=dat
   const {scrollYProgress}=useScroll({
     target:targetRef.current
   })
@@ -42,10 +42,29 @@ import { motion,useScroll,useTransform } from 'framer-motion'
             }}
             transition={{
               // delay:4,
-              duration:0.5
+              duration:2
             }}
             className='text-3xl mb-5 font-bold shadow-lg ext2-font'>{name}</motion.h3>
             <p>{context}</p>
+            <table>
+              <tr className=''>
+                <td >Built By:</td>
+                <motion.td
+            initial={{opacity:0}}
+            whileInView={{opacity:1,color:'#99e600'}}
+            transition={{duration:2,delay:1}}
+            >{created}</motion.td>
+              </tr>
+              <tr>
+                <td className='pr-4'>Language and Frameworks : </td>
+                <motion.span
+            initial={{opacity:0}}
+            whileInView={{opacity:1,color:'#99e600'}}
+            transition={{duration:2,delay:2}}
+            >{Lang}</motion.span>
+              </tr>
+            </table>
+            
             <button onClick={handleClick} className=' w-32 text-xl rounded-2xl py-2 anim hover:text-green-400 mt-4 hover:shadow-md hover:shadow-green-100'>VISIT SITE</button>
             </div>
             <div className='w-1/2 h-1/2 overflow-hidden flex'><motion.div  style={{x}} className='flex gap-3'><img src={image} alt="" /><img src={image2} alt="" /></motion.div></div>
