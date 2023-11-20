@@ -7,7 +7,7 @@ import ScrollingImages from './ScrollingImages'
 const Myprojects = () => {
   
   return (
-    <div className=''>
+    <div className=' '>
     {listproject.map((n)=>{
      return <ScrollingImages dat={n} leng={listproject.length}/>
     })}

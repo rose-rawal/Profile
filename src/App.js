@@ -6,14 +6,13 @@ import Footer from './layout/footer';
 import Context from './components/context/context';
 import { AnimatePresence } from 'framer-motion';
 import './App.css'
+
 // import backImage from './image/stone-wall.jpg'
 // import Home from './page/Home';
 function App() {
   const location= useLocation();
   return (
     <div className="App min-h-screen flex flex-col backimage relative" >
-    
-    
      
      <Context>
      <Header/>

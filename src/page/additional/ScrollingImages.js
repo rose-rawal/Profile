@@ -1,4 +1,4 @@
-import React ,{useRef,useEffect}from 'react'
+import React ,{useRef}from 'react'
 import { motion,useScroll,useTransform } from 'framer-motion'
 
   const ScrollingImages = ({dat,leng}) => {
@@ -15,7 +15,7 @@ import { motion,useScroll,useTransform } from 'framer-motion'
   
   const x=useTransform(scrollYProgress,[(index+0.2)/(leng+1),(index+0.4)/(leng+1)],['1%','-100%'])
   return (
-    <div ref={targetRef}>
+    <div ref={targetRef} className='border-gray-100 border-solid border-t-2'>
     <motion.div
         
         initial={{

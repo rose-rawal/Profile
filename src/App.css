@@ -121,3 +121,6 @@
 .scroll-animation::-webkit-scrollbar{
     width: 0;
 }
+.chang{
+    transition: 2s all;
+}
