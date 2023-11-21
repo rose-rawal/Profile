@@ -28,6 +28,7 @@ function App() {
       </AnimatePresence>
       </div>
       <div className='absolute w-full bottom-0'>
+      <div className='w-4 h-4 fixed bg-red-400 right-36 top-44 -z-10'></div>
       <Footer/>
       </div>
       </Context>
