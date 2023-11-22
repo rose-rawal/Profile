@@ -1,4 +1,5 @@
 import './App.css';
+/* eslint-disable no-unused-vars */
 import { BrowserRouter as Router,Route,Routes, useLocation } from 'react-router-dom';
 import routes from './routes';
 import Header from './layout';
