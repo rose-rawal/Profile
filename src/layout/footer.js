@@ -18,9 +18,9 @@ const Footer = () => {
     <span className='text-lg pb-2 text-gray-300 absolute top-2'>Contact</span>
       <ul className='pt-4'>
         <li className='hover:text-gray-400 cursor-pointer pb-1'>rooserwl@gmail.com</li>
-        <li className='hover:text-gray-400 cursor-pointer pb-1'>Phone No</li>
-        <li className='hover:text-gray-400 cursor-pointer pb-1'>Linkedin</li>
-        <li className='hover:text-gray-400 cursor-pointer pb-1'>GitHub</li>
+        <li className='hover:text-gray-400 cursor-pointer pb-1'>+977 9821688075</li>
+        <li className='hover:text-gray-400 cursor-pointer pb-1'><a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/rose-rawal-351543206/">Linkedin</a></li>
+        <li className='hover:text-gray-400 cursor-pointer pb-1'><a target='_blank' rel='noreferrer' href="https://github.com/rose-rawal">GitHub</a></li>
       </ul>
     </div>
     <div >

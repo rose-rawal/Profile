@@ -12,12 +12,13 @@
     transition: all 0.4s ease-in-out;
 }
 .backg{
-    background-image: url('./image/background-about-page.jpg');
+    /* background-image: url('./image/background-about-page.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     /* background-attachment: fixed; */
     /* filter: brightness(40%); */
+    background-color: rgb(206, 212, 216);
 }
 .underline-on-hover {
     position: relative;
@@ -120,4 +121,12 @@
 }
 .scroll-animation::-webkit-scrollbar{
     width: 0;
+}
+@media(max-width:700px){
+    .hideItem{
+        display: none;
+    }
+    .changeSize{
+        display: none;
+    }
 }

@@ -56,8 +56,8 @@ const Project = () => {
     initial='initial'
     animate='final'
     exit='exit'
-     className='min-h-screen bg-slate-900 w-full text-white flex flex-col items-center'>
-    <div className='h-screen w-3/4 py-24'>
+     className='min-h-screen bg-slate-900 w-screen overflow-hidden text-white flex flex-col items-center'>
+    <div className='min-h-screen w-3/4 py-24'>
     <div className='flex justify-center'><h1 className='text-6xl ext2-font text-center mb-20 text-animate' data-text='Projects'>Projects</h1></div>
     <div className='flex justify-between items-center'>
     <motion.p 
@@ -78,7 +78,7 @@ const Project = () => {
     variants={rightAnimation}
     initial='initial'
     animate='after'
-    className='w-96 shadow-effect'><img src={monitor} alt="" className='shadow-effect'/></motion.div>
+    className='w-96 shadow-effect hideItem'><img src={monitor} alt="" className='shadow-effect'/></motion.div>
     </div>
     </div>
     <div 

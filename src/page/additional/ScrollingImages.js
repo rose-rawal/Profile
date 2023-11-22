@@ -67,7 +67,7 @@ import { motion,useScroll,useTransform } from 'framer-motion'
             
             <button onClick={handleClick} className=' w-32 text-xl rounded-2xl py-2 anim hover:text-green-400 mt-4 hover:shadow-md hover:shadow-green-100'>VISIT SITE</button>
             </div>
-            <div className='w-1/2 h-1/2 overflow-hidden flex'><motion.div  style={{x}} className='flex gap-3'><img src={image} alt="" /><img src={image2} alt="" /></motion.div></div>
+            <div className='w-1/2 overflow-hidden flex'><motion.div  style={{x}} className='flex gap-3'><img src={image} alt="" /><img src={image2} alt="" /></motion.div></div>
         </motion.div></div>
   )
 }
