@@ -57,7 +57,7 @@ animate={{opacity:1}}
 transition={{duration:2,delay:1}}
 className='w-1/4 absolute right-0 -z-20'><img src={moon} alt="" /></motion.div>
 </div>
-<div onClick={(e)=>{gotoPage('project',e)}} className='bg-black pt-12 min-h-screen mb-5 one pb-10'>
+<div className='bg-black pt-12 min-h-screen mb-5 one pb-10'>
 
 <h1 className='text-4xl ml-10 pl-20 pb-5'>I have</h1>
 {/* ${repeat?'opacity-100':'opacity-0'} */}
