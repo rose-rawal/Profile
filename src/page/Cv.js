@@ -1,4 +1,4 @@
-import React, { useContext,useState } from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
 import context from '../components/context/maincontext'
 import cv1 from '../image/cv/1.png'
