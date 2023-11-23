@@ -8,6 +8,24 @@ import js from '../../image/js.png'
 import re from '../../image/re.jpg'
 const Scrollto = () => {
     const [animate,setAnimate]=useState(false);
+    const [isSmall,setIsSmall]=useState(false)
+     useEffect(()=>{
+    const handleResize = () => {
+      setIsSmall(window.innerWidth < 700);
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Listen for window resize events
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+
+  },[])
     const {bgAnimate,setBgAnimate}=useContext(context)
     const handleEnter=(a)=>{
         setBgAnimate(a);
@@ -45,13 +63,13 @@ const Scrollto = () => {
        
     </ul>
     <div className={`absolute top-0 right-1/4 w-32 `}><img src={arrow} alt="" className={`${move?'pl-10':'pl-0'} anim`}/><p className='ml-10 text-lg ext-font'>Hover Here</p></div>
-    <div className={`absolute top-10 left-32 w-72 z-0 ${bgAnimate===0? animate?'visible':'invisible':'invisible'} appear`}><img src={coding} alt="" />
+    <div className={`absolute top-10 left-32 w-72 z-0 ${isSmall?'invisible':bgAnimate===0? animate?'visible':'invisible':'invisible'} appear`}><img src={coding} alt="" />
     <p>Precise Layout</p></div>
-    <div className={`absolute top-10 left-32 w-72 z-0 ${bgAnimate===1? animate?'visible':'invisible':'invisible'} appear`}><img src={css} alt="" />
+    <div className={`absolute top-10 left-32 w-72 z-0 ${isSmall?'invisible':bgAnimate===1? animate?'visible':'invisible':'invisible'} appear`}><img src={css} alt="" />
     <p>Beautiful Designing</p></div>
-    <div className={`absolute top-10 left-32 w-72 z-0 ${bgAnimate===2? animate?'visible':'invisible':'invisible'} appear`}><img src={js} alt="" />
+    <div className={`absolute top-10 left-32 w-72 z-0 ${isSmall?'invisible':bgAnimate===2? animate?'visible':'invisible':'invisible'} appear`}><img src={js} alt="" />
     <p>Crazy Implementation</p></div>
-    <div className={`absolute top-10 left-32 w-72 z-0 ${bgAnimate===3? animate?'visible':'invisible':'invisible'} appear`}><img src={re} alt="" />
+    <div className={`absolute top-10 left-32 w-72 z-0 ${isSmall?'invisible':bgAnimate===3? animate?'visible':'invisible':'invisible'} appear`}><img src={re} alt="" />
     <p>Clear and Precise to goal</p></div>
     </div>
   )

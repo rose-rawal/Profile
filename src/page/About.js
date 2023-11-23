@@ -73,14 +73,14 @@ const About = () => {
       </div>
       <div className='w-4/5 m-auto mb-5'>
         <p className='ext-font text-3xl'>About Me:</p>
-        <p className=' hover:text-green-300  anim whit'>I am an enthusiastic web developer with months of experience on web development
+        <p className=' whit'>I am an enthusiastic web developer with months of experience on web development
 through self-ventures. Learned web development for skill gaining but started truly liking the grind. <br />
 Now I am continuously exploring the field in search of new skills and honing my current skills to be better tomorrow than today. Aiming to be better today than yesterday.
 </p>
       </div>
       <div className='w-4/5 mx-auto mt-20 mb-10 '>
         <p className='ext-font text-3xl'>Contact Me:</p>
-        <p className=' hover:text-green-300 anim whit'>
+        <p className=' whit'>
         I am searching for fellow coders and seniors to guide me through my journey of coding. If anyone is interested to contact me through any platoform or watch my journey please refer to my contact information provided below. I will be constantly 
         creating new projects and projecting it in this page to show the effort and skill i am gaining endlessly. <br />
         Lets join together and work to create a better version of ourself!

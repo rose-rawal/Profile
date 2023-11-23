@@ -38,10 +38,10 @@ const Header = () => {
         <div className='Logo text-5xl pb-3 ext-font ml-20 cursor-pointer' onClick={handleLogo}>Kuro</div>
         <div className=' h-full sm:w-3/4 md:w-1/2 '>
             {(isPressed || !isSmallScreen) && (
-              <ul className={`flex  justify-evenly h-full ${isPressed?' flex-col fixed right-0 bg-gray-900 w-1/4 text-right pt-10':''}`}>
+              <ul className={`flex  justify-evenly h-full ${isPressed?' flex-col fixed right-0 bg-gray-900 w-1/4 text-right pt-5':''}`}>
             {
               routes.map((n)=>{
-                return <li key={n.name} className='hover:bg-black h-full flex items-center text-center flex-grow  hover:text-white transition ease-in-out delay-150 cursor-pointer' onClick={(e)=>handlenav(n,e)}><div className='w-full text-right pr-3'>{n.name}</div></li>
+                return <li key={n.name} className='hover:bg-black h-full flex items-center text-center flex-grow  hover:text-white transition ease-in-out delay-150 cursor-pointer' onClick={(e)=>handlenav(n,e)}><div className='w-full text-center pr-3'>{n.name}</div></li>
               })
             }
                 
