@@ -47,9 +47,9 @@ const Home = () => {
     exit='exit'
     className={`  w-full text-white bg-transparent`} >
     <div onClick={(e)=>{gotoPage('',e)}} className={`bg-black transform ${!animation?'-translate-x-full opacity-2':'translate-x-0 opacity-100'}  ease-in-out duration-700 pb-10 min-h-screen pt-36 flex flex-col mb-5`}>
-    <h1 className='text-4xl ml-10 pl-20 pb-5'>Hey,</h1>
-    <h3 className='text-6xl font-bold transform ease-in-out duration-500 hover:translate-x-10 hover:text-red-400 pl-20 relative self-start'>I'm Rose Rawal <span className='absolute top-14 left-5 text-lg pl-20 hover:text-red-800'>Web Developer</span></h3>
-        <p className='py-20 w-1/2 ml-20 animate-fade-in animate-delay-1 duration-1000 transform translate-y-0 pb-10'>Enthusiastic web developer with lots of experience on web development
+    <h1 className='text-4xl ml-10 pb-5 sm:pl-0 md:pl-10 lg:pl-20'>Hey,</h1>
+    <h3 className='text-6xl font-bold transform ease-in-out duration-500 hover:translate-x-10 hover:text-red-400 relative self-start sm:pl-0 md:pl-10 lg:pl-20'>I'm Rose Rawal</h3>
+        <p className='py-20 w-1/2 animate-fade-in animate-delay-1 duration-1000 transform translate-y-0 pb-10 sm:pl-0 md:pl-10 lg:pl-20 sm:w-full'>Enthusiastic web developer with lots of experience on web development
 through self-ventures. Learned web development with of multiple languages. Each day endears to gain more skilled and acute in web development.</p>
 <motion.div 
 initial={{opacity:0}}
@@ -59,19 +59,19 @@ className='w-1/4 absolute right-0 -z-20'><img src={moon} alt="" /></motion.div>
 </div>
 <div className='bg-black pt-12 min-h-screen mb-5 one pb-10'>
 
-<h1 className='text-4xl ml-10 pl-20 pb-5'>I have</h1>
+<h1 className='text-4xl ml-10 pb-5 sm:pl-0 md:pl-10 lg:pl-20'>I have</h1>
 {/* ${repeat?'opacity-100':'opacity-0'} */}
-<h3 className={`pl-20 text-6xl font-bold change`}>Multiple Different Projects</h3>
-<p className='py-10 ml-20'>Multiple different projects have showcased my abilities and talents in different areas of web development.</p>
+<h3 className={` text-6xl font-bold change sm:pl-0 md:pl-10 lg:pl-20`}>Multiple Different Projects</h3>
+<p className='py-10 sm:pl-0 md:pl-10 lg:pl-20'>Multiple different projects have showcased my abilities and talents in different areas of web development.</p>
 <Carousel/>
 
 </div>
 <div onClick={(e)=>{gotoPage('skills',e)}} className={`bg-gray-200 pt-12 min-h-screen pb-24 text-black ${bgAnimate===0?'bg-gray-300':bgAnimate===1?'bg-gray-400':bgAnimate===2?'bg-gray-500':bgAnimate===3?'bg-gray-600':'bg-gray-200'}`}>
 
-<h1 className='text-4xl ml-10 pl-20 pb-5'>I learned</h1>
+<h1 className='text-4xl ml-10 pb-5 sm:pl-0 md:pl-10 lg:pl-20'>I learned</h1>
 {/* ${repeat?'opacity-100':'opacity-0'} */}
-<h3 className={`pl-20 text-6xl font-bold `}>Multiple Different Languages</h3>
-<p className='py-10 ml-20'>Have honed skills in multiple different languages to complement in my web development journey.</p>
+<h3 className={` text-6xl font-bold sm:pl-0 md:pl-10 lg:pl-20`}>Multiple Different Languages</h3>
+<p className='py-10 sm:pl-0 md:pl-10 lg:pl-20'>Have honed skills in multiple different languages to complement in my web development journey.</p>
 <Scrollto/>
 
 </div>
